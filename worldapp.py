@@ -213,7 +213,7 @@ if st.button("Let's begin!"):
     import pandas as pd
     import numpy as np
     
-    df = pd.read_csv('D:\Data Science\WPP2019_TotalPopulationBySex.csv')
+    df = pd.read_csv('.\WPP2019_TotalPopulationBySex.csv')
     df = df[["Location", "Time", "PopTotal", "PopDensity"]]
     df = df[df["Time"] < 2021]
     df = df.drop_duplicates()
@@ -223,7 +223,7 @@ if st.button("Let's begin!"):
     df_year = df_year.set_index(pd.RangeIndex(df_year.shape[0]))
 
 
-    df_locs = pd.read_csv('D:\Data Science\WorldCountryCoordinates.csv')
+    df_locs = pd.read_csv('.\WorldCountryCoordinates.csv')
     df_locs = df_locs.rename(columns = {"name" : "Location"})
 
 
