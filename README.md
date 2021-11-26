@@ -12,8 +12,11 @@
 ### Tech Stack
 Python
 > Streamlit
+> 
 > Folium
+> 
 > Pandas
+> 
 > Numpy
 
 Check out the deployed app [here](https://world-population-app.herokuapp.com/)
